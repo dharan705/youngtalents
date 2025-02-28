@@ -1,0 +1,49 @@
+.event {
+  margin: 0; /* Remove default margin */
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  background-image: url("./bg1.gif"); /* Your GIF Path */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* Fixed effect when scrolling */
+  overflow: hidden; /* Prevent unwanted scrollbars */
+}
+.events-container {
+  max-width: 600px;
+  margin: 100px auto; /* Center the box vertically */
+  padding: 20px;
+  text-align: center;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.8); /* Glassmorphic Effect */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  position: relative;
+  z-index: 2;
+}
+
+.events-container h2 {
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.events-list {
+  list-style: none;
+  padding: 0;
+}
+
+.events-list li {
+  font-size: 18px;
+  margin: 10px 0;
+  text-align: left;
+  padding: 10px;
+  background: #f8f9fa;
+  border-left: 5px solid #007bff;
+  border-radius: 5px;
+}
+
+.events-list span {
+  color: #007bff;
+  font-weight: bold;
+}

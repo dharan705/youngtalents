@@ -1,17 +1,31 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React, { useState } from "react";
+import ReactDOM from "react-dom/client";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Header from "./page/Header";
+import Register from "./page/Register";
+import Contest1 from "./page/contest1";
+import About from "./page/About"; // Import About Page
+import Nav from "./page/Nav";
+import Event from "./page/Event";
+import Contact from "./page/Contact";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+export default function App() {
+  const [menuOpen, setMenuOpen] = useState(false);
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+  return (
+    <BrowserRouter>
+      <Nav menuOpen={menuOpen} toggleMenu={() => setMenuOpen(!menuOpen)} /> 
+      <Routes>
+        <Route path="/" element={<Header />} />
+        <Route path="/about" element={<About />} /> {/* Add About Page */}
+        <Route path="/register" element={<Register />} />
+        <Route path="/event" element={<Event/>}/>
+        <Route path="/contest" element={<Contest1 />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
+    </BrowserRouter>
+  );
+}
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(<App />);

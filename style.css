@@ -1,0 +1,66 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #fff;
+    text-align: center;
+}
+
+.container {
+    position: relative;
+    padding: 50px 20px;
+    background: linear-gradient(to right, #fff, #f9f9f9);
+    overflow: hidden;
+}
+
+.content {
+    max-width: 600px;
+    margin: auto;
+}
+
+h2 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+}
+
+p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.register-btn {
+    background-color: #fbbf24;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #000;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.register-btn:hover {
+    background-color: #f59e0b;
+}
+
+.images {
+    position: relative;
+    margin-top: 30px;
+}
+
+.girl {
+    position: absolute;
+    left: -20px;
+    bottom: -20px;
+    width: 250px;
+}
+
+.boy {
+    position: absolute;
+    right: -20px;
+    bottom: -20px;
+    width: 250px;
+}

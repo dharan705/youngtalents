@@ -1,0 +1,94 @@
+
+
+.dance-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #ffffff;
+  padding: 20px;
+}
+
+.dance-card {
+  display: flex;
+  align-items: center;
+  max-width: 900px;
+  background: linear-gradient(to right, #fff5cc, #e6ffe6);
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  border: 3px solid #ffa500;
+  position: relative;
+}
+
+.dance-image {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 25px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.dance-content {
+  flex: 1;
+  text-align: left;
+}
+
+.dance-title {
+  font-size: 28px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.quote {
+  font-style: italic;
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.description {
+  font-size: 16px;
+  color: #444;
+  line-height: 1.6;
+}
+
+.register-btn {
+  display: inline-block;
+  background: linear-gradient(to right, #ff416c, #ff4b2b);
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 20px;
+  text-decoration: none;
+  transition: 0.3s ease-in-out;
+}
+
+.register-btn:hover {
+  background: linear-gradient(to right, #ff4b2b, #ff416c);
+  transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .dance-card {
+      flex-direction: column;
+      text-align: center;
+      padding: 20px;
+  }
+  
+  .dance-image {
+      margin: 0 auto 20px;
+  }
+
+  .register-btn {
+      font-size: 16px;
+      padding: 10px 20px;
+  }
+}
