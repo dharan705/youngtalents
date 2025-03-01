@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/youngtalents/static/css/main.d84c069f.css",
+    "main.js": "/youngtalents/static/js/main.a346439b.js",
+    "static/media/bg1.gif": "/youngtalents/static/media/bg1.4104c9cdb7a8f776bca5.gif",
+    "static/media/Loop1.mp4": "/youngtalents/static/media/Loop1.3a729d56faee658e9a2d.mp4",
+    "static/media/bg.gif": "/youngtalents/static/media/bg.6c7e4f9c0fe4f67ee722.gif",
+    "index.html": "/youngtalents/index.html",
+    "main.d84c069f.css.map": "/youngtalents/static/css/main.d84c069f.css.map",
+    "main.a346439b.js.map": "/youngtalents/static/js/main.a346439b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d84c069f.css",
+    "static/js/main.a346439b.js"
+  ]
+}
