@@ -13,7 +13,9 @@ export default function App() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/youngtalents">
+
+    
       <Nav menuOpen={menuOpen} toggleMenu={() => setMenuOpen(!menuOpen)} /> 
       <Routes>
         <Route path="/" element={<Header />} />

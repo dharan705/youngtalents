@@ -23,7 +23,7 @@ const Header = () => {
       <p className="description">
         Join our exciting contest and win amazing prizes!
       </p>
-      <button className="learn-more">Learn More</button>
+      <button className="learn-more" type="button" onClick={() => navigate("/about")}>Learn More</button>
     </div>
   </div>
 </div>
@@ -122,14 +122,19 @@ const Header = () => {
 
       <footer className="footer">
       <div className="footer-links">
-        <a href="/about">About</a>
-        <a href="/register">Register</a>
-        <a href="/events">Events</a>
-        <a href="/contact">Contact</a>
+      <button className="social-btn" type="button" onClick={() => navigate("/about")}>about
+      </button>
+      <button className="social-btn" type="button" onClick={() => navigate("/register")}>register
+      </button>
+      <button className="social-btn" type="button" onClick={() => navigate("/event")}>event
+      </button>
+      <button className="social-btn" type="button" onClick={() => navigate("/contact")}>contact
+      </button>
       </div>
 
       <div className="footer-social">
   <button className="social-btn">Facebook</button>
+  
   <button className="social-btn">Instagram</button>
   <button className="social-btn">YouTube</button>
 </div>
